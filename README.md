@@ -1,7 +1,7 @@
 # mixup_chainer
 implementation of mixup (https://arxiv.org/abs/1710.09412) with Chainer
 
-##mixup
+## mixup
 mixup augments training data by making convex combination of them
 ```math
 x = lambda * x_1 + (1-lambda) * x_2
@@ -9,7 +9,7 @@ t = lambda * t_1 + (1-lambda) * t_2
 ```
 (`lambda` following Beta(alpha, alpha).)
 
-##Usage
+## Usage
 `main.py` execute mixup training using MNIST dataset.
 run `python main.py`. you can designate optional arguments. see `python main.py -h`
 * `--batchsize`
@@ -18,7 +18,7 @@ run `python main.py`. you can designate optional arguments. see `python main.py 
 * `--decay` parameter of weight decay
 * `--lr` learning rate
 
-##Result
+## Result
 ```
 % python main.py --alpha 0.4
 epoch: 5 train_loss: 0.6244 val_loss: 0.1413 val_accuracy: 0.9679
